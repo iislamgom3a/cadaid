@@ -1,0 +1,21 @@
+[project]
+name = "cadaid"
+version = "0.1.0"
+description = "AD network topology tool."
+readme = "README.md"
+authors = [
+    { name = "Islam Gomaa", email = "iislamgom3a@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "matplotlib>=3.11.2",
+    "numpy>=2.5.4",
+    "pyqt6>=6.11.0",
+]
+
+[project.scripts]
+cadaid = "cadaid.main:main"
+
+[build-system]
+requires = ["uv_build>=0.12.18,<0.13.0"]
+build-backend = "uv_build"
